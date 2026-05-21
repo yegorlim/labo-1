@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>AR project template</title>
-    <!-- Додаємо необхідні бібліотеки -->
     <script src="js/three.js"></script>
     <script src="js/tween.umd.js"></script>
     <script src='loaders/GLTFLoader.js'></script>
     <script src='loaders/GLTF2Loader.js'></script>
     <script src='loaders/MTLLoader.js'></script>
     <script src='loaders/OBJLoader.js'></script>
-    <!-- Додаємо jsartookit -->
     <script src="jsartoolkit5/artoolkit.min.js"></script>
     <script src="jsartoolkit5/artoolkit.api.js"></script>
-    <!-- Додаємо threex.artoolkit -->
     <script src="threex/threex-artoolkitsource.js"></script>
     <script src="threex/threex-artoolkitcontext.js"></script>
     <script src="threex/threex-arbasecontrols.js"></script>
@@ -153,10 +149,10 @@
 
                 // Масив назв файлів .patt. Масив заповнюється в порядку додавання маркерів
                 // якщо замість .patt було додано баркод, на його місце в масив додається порожній рядок
-                const patternNames = ["" ,"" ,""];
+                const patternNames = ["" ,"" ,"pattern-j.patt"];
                 // Масив баркодів, заповнюється одночасно з масивом патернів
                 // якщо замість баркоду був доданий .patt, на його місце масив додається -1
-                const patternBarcode = [1 ,2 ,3];
+                const patternBarcode = [1 ,2 ,-1];
                 // Масив типів контенту кожного маркера, заповнюється значеннями: зображення, модель, відео
                 const modes = ["image" ,"image" ,"image"];
                 // Масив файлів моделей, якщо немає моделі буде додано порожній рядок
@@ -435,5 +431,4 @@
     </script>
 
 </body>
-
 </html>
